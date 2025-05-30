@@ -56,7 +56,7 @@ DELETE /characters/{name}/evict
 
 ```bash
 # Clone o repositório ou extraia o zip
-cd tibia-cache-poc
+cd spring-cache
 
 # Build do projeto
 ./mvnw clean install
@@ -69,7 +69,7 @@ A aplicação estará disponível em: [http://localhost:8080](http://localhost:8
 
 ## ⏱️ Configuração do Cache
 
-- **Duração**: 10 segundos após o último acesso (`expireAfterAccess`)
+- **Duração**: 600 segundos após o último acesso (`expireAfterAccess`)
 - **Tamanho máximo**: 100 entradas
 - **Cache utilizado**: `characters`
 
@@ -77,7 +77,3 @@ A aplicação estará disponível em: [http://localhost:8080](http://localhost:8
 
 - As vocações e mundos são gerados aleatoriamente com base nas classes e servidores clássicos do Tibia.
 - Simula um comportamento de API externa com delay programado.
-
----
-
-Desenvolvido com nostalgia por Tibia e tecnologia ⚔️🧡
